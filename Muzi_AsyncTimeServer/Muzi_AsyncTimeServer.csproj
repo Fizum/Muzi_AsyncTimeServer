@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Muzi_SocketAsyncLib\Muzi_SocketAsyncLib.csproj">
+      <Project>{0fd0e4b9-db33-42b7-88c3-725446ae2df9}</Project>
+      <Name>Muzi_SocketAsyncLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

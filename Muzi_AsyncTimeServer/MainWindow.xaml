@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Muzi_AsyncTimeServer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="500">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFF90E0E"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Btn_Ascolta" Content="Big Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
+        <TextBox x:Name="Txt_Messaggio" HorizontalAlignment="Left" Height="56" Margin="257,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="Btn_Disconnetti" Content="Other Button" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
+        <Button x:Name="Btn_Invia" Content="Other Fucking Button" HorizontalAlignment="Left" Margin="257,71,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
+
     </Grid>
 </Window>

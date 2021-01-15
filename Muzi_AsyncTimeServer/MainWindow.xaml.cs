@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Muzi_SocketAsyncLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,26 @@ namespace Muzi_AsyncTimeServer
     /// </summary>
     public partial class MainWindow : Window
     {
+        AsyncSocketServer mServer;
         public MainWindow()
         {
             InitializeComponent();
+            mServer = new AsyncSocketServer();
+        }
+
+        private void Btn_Ascolta_Click(object sender, RoutedEventArgs e)
+        {
+            mServer.InizioAscolto();
+        }
+
+        private void Btn_Disconnetti_Click(object sender, RoutedEventArgs e)
+        {
+            mServer.ChiudiConnessione();
+        }
+
+        private void Btn_Invia_Click(object sender, RoutedEventArgs e)
+        {
+            mServer.InviaATutti(Txt_Messaggio.Text);
         }
     }
 }
